@@ -1,5 +1,6 @@
 import selenium
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -8,7 +9,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
-
 
 # Grab user log in credentials
 username = input("Enter Username ")
@@ -39,4 +39,5 @@ driver.find_element_by_css_selector(
 
 # driver.find_elements_by_class_name('_3kh8OsNx6QdAbMaoKTi2Yq hJ4K1g8Iw9BKNXpQ6RnRQ').click()
 
-# WebDriverWait(driver, 10).until(EC.element_to_be_clickable(By.CLASS_NAME, '_3kh8OsNx6QdAbMaoKTi2Yq hJ4K1g8Iw9BKNXpQ6RnRQ')).click()
+# WebDriverWait(driver, 5).until(EC.element_to_be_clickable(
+#     (By.CLASS_NAME, "_3kh8OsNx6QdAbMaoKTi2Yq hJ4K1g8Iw9BKNXpQ6RnRQ"))).click()
